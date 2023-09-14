@@ -1,0 +1,58 @@
+﻿Versionshistorie für Software Power Control
+(Änderungen verzeichnet seit Version 2.06)
+
+Symbolbedeutungen:
++ Etwas wurde hinzugefügt
+- Etwas wurde entfernt (allgemeine Fehlerbehebungen werden für eine bessere Übersichtlichkeit nicht aufgeführt)
+* Etwas wurde geändert
+---------------------------------------------------------------------------------------------------------------
+Version 2.14
++ Unterstützung für PSB 10000 Serie
++ Settings-App: neue Einstellungen für die analoge Schnittstelle (Pin 9 und 10, nur bei PSB-Series)
+
+Version 2.13:
++ Sandia PV-Testfunktion nun auch Multi Control verfügbar
++ Batterietest erweitert mit "Statische Ladung" und "Dynamischer Test" (nur verfügbar für PSB-Serien) im Funktionsgenerator und in Multi Control
+
+Version 2.12:
++ Multi Control: neue Funktion SAS (solar array simulation) hinzugefügt, welche die Möglichkeiten der Standard-PV-Funktion noch erweitert
++ Funktionsgenerator: neue Sandia PV-Testfunktion hinzugefügt
+
+Version 2.11:
++ Pfeiltasten an den Eingabefelder, um Werte mit Mausklicks oder Pfeiltasten auf der Tastatur hoch- oder runterstellen zu können
+- Problem beim Abbruch von Updates mit Meldung "Register xxx enthält 0"
++ Settings App: Konfiguration der Pins 6, 14 und 15 der analogen Schnittstelle (wird für die Serien PSI 9000, ELR 9000 und EL 9000 B verfügbar ab Firmware KE 2.23 (Pin 6/14) bzw. ab KE 2.24 (Pin 15))
++ Eingabe negativer Werte für Serien PSB 9000 und PSBE 9000
++ Funktionsgenerator App: Logging
+* Fehler behoben bei Leistungswerten >99999 W
+* Fehler behoben beim Update des HMI eines SLAVE-Modells
+
+Version 2.10:
++ Unterstützung für Serie PSB 9000 in der Function Generator App
++ Anzeige der Tagesdaten (DayET, DayUI) bei PV-Funktion EN 50530 in einem separaten Graph-Fenster
++ Erweiterter Demo-Modus mit PSB 9000 Demo-Gerät
++ Installierte Firmware-Versionen werden nun im Info-Teil der Appfenster angezeigt (oben links, zusammen mit den Nennwerten und dem Gerätemodell)
+* Scripting-Fenster optimiert
++ Multi Control, MPPT-Tracking: im Tab "Optionen" kann eine Ablaufwiederholung für die Modi MPP3 und MPP4 aktiviert, zusammen mit ein paar Einstellungen zum Logging
+
+Version 2.09:
++ Script-Funktion: in der Terminal können nun Scripts geladen werden (CSV-Format), die SCPI-Befehle enthalten und als "batch processing" in einstellbaren Abständen abgefahren werden
++ Unterstützung für Serie PSB 9000
+* Einstellungen zur CAN-Schnittstelle verbessert (Hinweis: EAPC kann die Schnittstelle IF-AB-CAN nicht nutzen, nur über USB konfigurieren)
+- Fehler in Bezug auf die Darstellung im GUI und im Bezug auf Sprachen behoben
+
+Version 2.08:
+- Fehler behoben, der Probleme beim Update von Geräten auf Windows 10 verursachte
+
+Version 2.07:
++ Unterstützung für Funktion PV DIN EN 50530 in der Multi Control App
++ Unterstützung für den Funktionsgenerator der Serie EL 3000 B
++ Unterstützung für Serie ELR 9000 HP
+
+Version 2.06:
++ Funktionsgenerator-Einstellung und -Fernsteuerung in App Multi Control
++ Der Graph kann nun auch in Multi Control geöffnet werden
++ Unterstützung für die neue Series EL 3000 B (vorerst ohne Funktionsgenerator-Unterstützung)
+* PV-Funktion verbessert (grafische Darstellung der Kurvendaten zeigt nun MPP)
++ Testlizenz: es ist nun möglich, auf Anfrage eine 14-tägige Testlizenz  zu nutzen, die alle lizensierten Funktionen freischaltet, aber die Multi Control App auf 5 Geräte begrenzt
++ Erweiterte PV-Funktion nach DIN EN 50530 zum Funktionsgenerator hinzugefügt (erfordert KE und HMI Firmware-Updates bei den PSI 9000 Geräten)
