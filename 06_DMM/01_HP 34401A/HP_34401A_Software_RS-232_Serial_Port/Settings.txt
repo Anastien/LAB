@@ -1,0 +1,5 @@
+0,191,255,Measurement_Color_RGB
+0,191,255,MIN_Color,RGB
+0,191,255,MAX_Color_RGB
+0,191,255,AVG_Color_RGB
+TRUE,Partial_SI_Prefix
