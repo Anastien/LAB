@@ -1,0 +1,81 @@
+document.write("<ul class='nav-English'>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=11'>News</a></li>" +
+"<li class='dropdown' id='menu-12'><a href='#'><span>About Terasic</span><i class='bi bi-chevron-down'></i></a><ul>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=12&No=17'>Company Profile</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=12&No=675'>Customer Testimonials</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=12&No=329'>University Program</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=12&No=20'>Contact Us</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=12&No=846'>Conflict Mineral Statement</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=12&No=520'>Terasic Privacy Policy</a></li>" +
+"</ul></li>" + 
+"<li class='dropdown' id='menu-17'><a href='#'><span>Products</span><i class='bi bi-chevron-down'></i></a><ul>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=163'>DE Boards</a></li>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=204'>SoC Platform</a></li>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=162'>Bundle Solution</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=238'>Robotic Kits</a></li>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=13&amp;List=Simple'>All FPGA Boards</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=65'>Daughter Cards</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=74'>USB Blaster Cable</a></li>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=221'>Books</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=75'>Accessories</a></li>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=17&amp;No=842'>OpenPET</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=17&No=1335'>Refurbished Products</a></li>" +
+"</ul></li>" + 
+"<li class='dropdown' id='menu-14'><a href='#'><span>Solutions</span><i class='bi bi-chevron-down'></i></a><ul>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=14&amp;No=111'>Electronic Design Service</a></li>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;No=279'>Electronic Manufacturing Service</a></li>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=14&amp;No=111&amp;PartNo=2'>Achievements</a></li>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=41&amp;No=459'>IP Core</a></li>" +
+"</ul></li>" + 
+"<li class='dropdown' id='menu-15'><a href='#'><span>Training</span><i class='bi bi-chevron-down'></i></a><ul>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/archive.pl?Language=English&amp;CategoryNo=51'>White Papers</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=49'>Tutorials</a></li>" +
+"<li><a class='nav-link scrollto' href='http://www.innovatefpga.com/' target='_blank'>Innovate FPGA - World FPGA Design Contest</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=213'>Project Bidding</a></li>" +
+"</ul></li>" + 
+"<li class='dropdown' id='menu-16'><a href='#'><span>Support</span><i class='bi bi-chevron-down'></i></a><ul>" +
+"<li><a class='nav-link scrollto' href='/cgi-bin/page/rma.pl?Language=English'>Return Materials Authorization</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=16&No=293'>Common Technical Questions</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=16&No=197'>Common Sales Questions</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=16&No=204'>Warranty</a></li>" +
+"</ul></li>" + 
+"<li class='dropdown nav-mobile'><a href='#' title='Change Language'><span>Language</span><i class='bi bi-chevron-down'></i></a><ul>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/en/'>English</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/tw/'>正體中文</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.cn/cn/'>简体中文</a></li>" +
+"</ul></li>" + 
+"<li class='dropdown nav-desktop'><a href='#'><span class='bi bi-globe2 nav-fixed'></span></a><ul>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/en/'>English</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.tw/tw/'>正體中文</a></li>" +
+"<li><a class='nav-link scrollto' href='https://www.terasic.com.cn/cn/'>简体中文</a></li>" +
+"</ul></li>" + 
+"</ul>" + 
+"<a class='nav-link' id='nav-search-toggle' href='#' title='Search'><span class='bi bi-search nav-fixed'></span></a>" + 
+"<a class='nav-link' href='/cgi-bin/page/member.pl?Language=English#heading' title='Member'><span class='bi bi-person-circle nav-fixed'></span></a>" + 
+"<a class='nav-link' href='https://www.terasic.com.tw/cgi-bin/page/checkout.pl?Method=ViewCart&Language=English' title='Cart'><span class='bi bi-cart nav-fixed'></span><span class='badge cart-count' id='cart-count'></span></a>" + 
+"<a class='nav-link scrollto' href='#'></a>" + 
+"<i class='bi bi-list mobile-nav-toggle'></i>" + 
+"<div id='nav-search-popup' style='display:none;' class='nav-search'><form action='/cgi-bin/page/archive.pl' method='get'><input type='hidden' name='Method' id='Method' value='Search'><input type='hidden' name='Language' id='Language' value='English'>" + 
+"<input type='text' id='nav-Keyword' name='Keyword' maxlength='85' placeholder='Search...' required/><button class='button' type='submit'><i class='bi bi-search'></i></button></form></div>" + 
+"");
+		// 綁定搜尋鈕 click 事件
+		const navSearchToggle = document.getElementById( "nav-search-toggle" );
+		navSearchToggle.addEventListener( "click", function(){
+		  toggleSearchPopup();
+		});
+		// 切換搜尋列
+		function toggleSearchPopup(){
+			const element = document.getElementById( "nav-search-popup" );
+			if( getStyle( element, "display" ) == "none" ){
+				element.style.display = "block";
+				document.getElementById( "nav-Keyword" ).focus();
+			}
+			else{
+				element.style.display = "none";
+			}
+		}
+		// 取得元件樣式
+		function getStyle( element, styleName ){
+			return( window.getComputedStyle( element ).getPropertyValue( styleName ) );
+		}
+	

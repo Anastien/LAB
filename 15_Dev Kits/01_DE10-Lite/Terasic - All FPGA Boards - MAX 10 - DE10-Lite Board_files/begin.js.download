@@ -1,0 +1,151 @@
+// begin.js:
+
+let $AlertClass = "is-invalid";
+
+function setCookie( $Name, $Value ){
+	let $ArgV = setCookie.arguments;
+	let $ArgC = setCookie.arguments.length;
+	let $Expires = ( $ArgC > 2 ) ? $ArgV[2] : null;
+	if( $Expires != null ){
+		let $LargeExpireDate = new Date();
+		$LargeExpireDate.setTime( $LargeExpireDate.getTime() + $Expires * 1000 * 3600 * 24 );
+	}
+	document.cookie = $Name + "=" + escape( $Value ) + ( ( $Expires == null ) ? "" : ( "; $Expires=" + $LargeExpireDate.toGMTString() ) ) + "; path=/;";
+}
+
+function checkChar( $Elements ){
+	let $Re = /[^\w@ ~,&#+'!\-\(\)\.\*\/]/;
+	for( let $Key in $Elements ){
+		if( $Re.test( document.getElementById( $Elements[$Key] ).value ) ){
+			document.getElementById( $Elements[$Key] ).focus();
+			document.getElementById( $Elements[$Key] ).select();
+			return document.getElementById( $Elements[$Key] );
+		}
+	}
+	return true;
+}
+
+function checkUnacceptChar( $Elements, $Message ){
+	if( $Message == "" || $Message == null ){
+		$Message = "The data you have entered includes unacceptable digits, please enter again!";
+	}
+	let $Re = /[^\w@ ~,&#+'!\-\(\)\.\*\/]/;
+	for( let $Key in $Elements ){
+		if( $Re.test( document.getElementById( $Elements[$Key] ).value ) ){
+			document.getElementById( $Elements[$Key] ).focus();
+			document.getElementById( $Elements[$Key] ).select();
+			alert( $Message );
+			return false;
+		}
+	}
+	return true;
+}
+
+function checkFieldEmpty( $Element, $Message, $ClassAdd ){
+	if( $Message == "" || $Message == null ){
+		$Message = "This is a required field!";
+	}
+	if( $Element.value == "" ){
+		alertField( $Element, $Message, $AlertClass );
+		return false;
+	}
+	else{
+		return true;
+	}
+}
+
+function checkFieldMail( $Element, $Message, $ClassAdd ){
+	if( $Message == "" || $Message == null ){
+		$Message = "Please enter a valid email address!";
+	}
+	if( $Element.value.indexOf( "@", 0 ) == -1 || $Element.value.indexOf( "." ) == -1 ){
+		alertField( $Element, $Message, $AlertClass );
+		return false;
+	}
+	else{
+		return true;
+	}
+}
+
+function alertField( $Element, $Message, $ClassAdd ){
+	alert( $Message );
+	if( $ClassAdd ){
+		addClass( $Element, $ClassAdd );
+	}
+	else{
+		addClass( $Element, "is-invalid" );
+	}
+	$Element.focus();
+}
+
+function addClass( $Element, $ClassAdd ){
+	let $CurrentClass = $Element.className;
+	if( $CurrentClass.indexOf( $ClassAdd ) == -1 ){
+		if( ( $CurrentClass == null ) || ( $CurrentClass === "" ) ){
+			$Element.className = $ClassAdd;
+		}
+		else{
+			$Element.className += " " + $ClassAdd;
+		}
+	}
+}
+
+function removeClass( $Element, $ClassRemove ){
+	let $CurrentClass = $Element.className;
+	if( $CurrentClass == $ClassRemove ){
+		$Element.className = "";
+		return;
+	}
+	let $ClassValues = $CurrentClass.split( " " );
+	let $FilteredList = [];
+	for ( let $i = 0; $i < $ClassValues.length; $i++ ){
+		if( $ClassRemove != $ClassValues[$i] ){
+			$FilteredList.push( $ClassValues[$i] );
+		}
+	}
+	$Element.className = $FilteredList.join( " " );
+}
+
+function getThousandsSeparator( $Number ){
+    return $Number.toLocaleString();
+}
+
+// 取得元件樣式
+function getStyle( $Element, $StyleName ){
+	return( window.getComputedStyle( $Element ).getPropertyValue( $StyleName ) );
+}
+
+// 切換顯示元件 - 使用 id
+function toggleDisplay( $Id, $IsDisplay ){
+	const $Element = document.getElementById( $Id );
+	if( $IsDisplay === 1 ){
+		$Element.style.display = "block";
+	}
+	else if( $IsDisplay === 0 ){
+		$Element.style.display = "none";
+	}
+	else{
+		if( getStyle( $Element, "display" ) == "none" ){
+			$Element.style.display = "block";
+		}
+		else{
+			$Element.style.display = "none";
+		}
+	}
+}
+
+// 模擬 jQuery 的 css 選擇器取得元素
+function $$( $Element, $IsFirst ){
+	if( $IsFirst === 1 ){
+		// 強制回傳第一筆符合的元素
+		return( document.querySelector( $Element ) );
+	}
+	else if( /^\#[\w\-]+/.test( $Element ) ){
+		// 以 $$( "#id" ) 回傳元素
+		return( document.getElementById( $Element.slice( 1 ) ) );
+	}
+	else{
+		// 回傳元素陣列
+		return( document.querySelectorAll( $Element ) );
+	}
+}
