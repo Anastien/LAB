@@ -1,0 +1,2 @@
+* VITREK V4 or VITREK VITREK v63 -> HiPot + IR tester.
+* HV Differential Probe, < 25 MHZ, <1000V.
