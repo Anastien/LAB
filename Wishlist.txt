@@ -1,4 +1,4 @@
 * HV Differential Probe, < 25 MHZ, <1000V.
 * High End Scope.
-* Bench VNA.
+* VNA Siglent SSA3021 SA can be upgraded to VNA.
 
