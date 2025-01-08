@@ -1,4 +1,3 @@
-* HV Differential Probe, < 25 MHZ, <1000V.
-* High End Scope.
+* A Current probe for oscilloscope, upto 50MHz, example https://www.ebay.com/itm/365201542166
+* 2X TEK VPI probes.
 * VNA Siglent SSA3021 SA can be upgraded to VNA.
-
