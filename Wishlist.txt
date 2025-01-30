@@ -1,2 +1,4 @@
 * A Current probe for oscilloscope, upto 50MHz, example https://www.ebay.com/itm/365201542166
+* https://www.ebay.com/itm/116399621178
+Tektronix TPA-BNC 
 * VNA Siglent SSA3021 SA can be upgraded to VNA.
